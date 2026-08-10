@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | RealTrade</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #080f1c;
+      color: white;
+    }
+
+    header {
+      background: #111a2e;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logout {
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .welcome {
+      color: #aebbd0;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #121d33;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      color: #aebbd0;
+      margin-top: 0;
+    }
+
+    .amount {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .market {
+      display: flex;
+      justify-content: space-between;
+      padding: 18px 0;
+      border-bottom: 1px solid #283650;
+    }
+
+    .green {
+      color: #28c76f;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 13px 25px;
+      border: none;
+      border-radius: 7px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .deposit {
+      background: #19a957;
+      color: white;
+    }
+
+    .withdraw {
+      background: #273652;
+      color: white;
+    }
+
+    .notice {
+      margin-top: 30px;
+      background: #18253d;
+      padding: 18px;
+      border-radius: 8px;
+      color: #aebbd0;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 800px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">RealTrade</div>
+    <a class="logout" href="index.html">Logout</a>
+  </header>
+
+  <div class="container">
+
+    <h1>Trading Dashboard</h1>
+
+    <p class="welcome">
+      Welcome to your RealTrade account.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Account Balance</h3>
+        <div class="amount">$0.00</div>
+      </div>
+
+      <div class="card">
+        <h3>Available Funds</h3>
+        <div class="amount">$0.00</div>
+      </div>
+
+      <div class="card">
+        <h3>Open Positions</h3>
+        <div class="amount">0</div>
+      </div>
+
+    </div>
+
+    <div class="buttons">
+      <button class="deposit">Deposit Funds</button>
+      <button class="withdraw">Withdraw Funds</button>
+    </div>
+
+    <div class="section">
+
+      <div class="card">
+
+        <h2>Markets</h2>
+
+        <div class="market">
+          <span>EUR/USD</span>
+          <span>Market unavailable</span>
+        </div>
+
+        <div class="market">
+          <span>GBP/USD</span>
+          <span>Market unavailable</span>
+        </div>
+
+        <div class="market">
+          <span>USD/JPY</span>
+          <span>Market unavailable</span>
+        </div>
+
+        <div class="market">
+          <span>BTC/USD</span>
+          <span>Market unavailable</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="notice">
+      Your dashboard is currently in development. Real-money trading,
+      deposits, withdrawals, live prices, and order execution will only
+      become available after secure backend integration and connection
+      with an appropriate regulated financial provider.
+    </div>
+
+  </div>
+
+</body>
+</html>
